@@ -66,7 +66,7 @@ h2{
 	font-size: 38px;
 }
 h3{
-	font-family: 20px;
+	font-size:20px;
 }
 ul, li{
 	font-family: Raleway-Light;
@@ -170,7 +170,7 @@ a{
 /*--HEADER END--*/
 /*--INTRO SECTION--*/
 .intro{
-	background: url(../images/BannerBack.jpg) center 100% no-repeat;
+	background: url(../images/BannerBack.jpg) 100% no-repeat;
 	min-height: 680px;
 	color: #f6f1bf;
 	position: relative;
@@ -224,11 +224,10 @@ a{
 	display: block;
 	height: 20px;
 	width: 20px;
-	transform: rotate(45deg);
 	position: absolute;
 	top: 95%;
   	left: 50%;
-  	transform: translate(-50%, -50%), rotate(45deg);
+  	transform: translate(-50%, -50%) rotate(45deg);
 }
 #toNextSection span{
 	display: block;
@@ -242,9 +241,9 @@ a{
 	content: '';
 	display: block;
 	position: absolute;
-	width: 340px;
-	top: -120px;
-    left: -30px;
+	width: 253px;
+    top: -89px;
+    left: -19px;
 	border-top: 1px solid #f6f1bf;
 	transform: rotate(-45deg);
 }
@@ -252,9 +251,117 @@ a{
 	content: '';
 	display: block;
 	position: absolute;
-	width: 340px;
-	top: 140px;
-    right: -30px;
+    width: 253px;
+    top: 108px;
+    right: -19px;
 	border-top: 1px solid #f6f1bf;
 	transform: rotate(-45deg);
+}
+/*--END INTRO SECTION --*/
+/*-- ADVANTAGES SECTION --*/
+.advantages{
+	padding-top: 28px;
+	background: url(../images/WhyUsBack.jpg) 100% no-repeat;
+}
+.sec_title{
+	text-align: center;
+	font-size: 38px;
+	font-family: Raleway-Medium;
+	text-transform: uppercase;
+	color: #636259;
+	max-width: 242px;
+	margin: 0 auto;
+	border: 3px solid #626262;
+	position: relative;
+}
+.sec_title:before, .sec_title:after{
+	content: '';
+	display: block;
+	position: absolute;
+	min-width: 170px;
+	border-top: 1px solid #626262;
+}
+.sec_title:before{
+	top:50%;
+	left: -145px;
+}
+.sec_title:after{
+	top:50%;
+	right: -145px;
+}
+.sec_title span{
+	font-family: Raleway-SemiBold;
+	font-size: 47px;
+	color: #000;
+}
+.sec_adv{
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+.sec_adv blockquote{
+	padding-left: 2%;
+    padding-bottom: 6%;
+}
+.sec_adv h3{
+	font-family: Raleway-SemiBold;
+	font-size: 48px;
+	color: #3c0a0d;
+	text-align: right;
+	position: relative;
+}
+.sec_adv h3:after, .sec_adv h3:before{
+	content: '';
+	display: block;
+	min-width: 42px;
+	min-height: 35px;
+}
+.sec_adv h3:after{
+	background-image: url(../images/quote_r.png);
+	position: absolute;
+	right:-10px;
+	bottom:-45px;
+}
+.sec_adv h3:before{
+	background-image: url(../images/quote_l.png);
+	position: absolute;
+	left: 45px;
+    top: -25px;
+}
+.adv_items{
+	max-width: 40%;
+	list-style:none;
+	flex-wrap: wrap;
+	padding-left: 0;
+}
+.adv_items li{
+	font-family: Raleway-Medium;
+	font-size: 19px;
+	color: #242322;
+	min-width: 196px;
+	min-height: 66px;
+	margin: 50px 0;
+	position: relative;
+}
+.adv_items li:before, .adv_items li:after{
+	content: '';
+	display: block;
+	width: 130px;
+	height: 130px;
+	position: absolute;
+}
+.adv_items li:before{
+	border-left: 1px solid #6a6a6a;
+	right:35%;
+	bottom:5%;
+}
+.adv_items li:after{
+	right:40%;
+	border-top: 1px solid #6a6a6a;
+}
+.adv_items li:nth-of-type(3):before, .adv_items li:nth-of-type(4):before{
+	bottom:-30%;
+}
+.adv_items li:nth-of-type(3), .adv_items li:nth-of-type(4){
+	margin-bottom: 90px;
 }
