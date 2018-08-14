@@ -199,9 +199,6 @@ a{
 	padding-left:8px; 
 	height: 32px;
 }
-.sidebar input:placeholder{
-	color:#000;
-}
 .sidebar button{
 	height: 50px;
 	width: 165px;
