@@ -1,13 +1,13 @@
-$('.arrow-top a').click(function(e){
+$('.intro a').click(function(e){
 	e.preventDefault();
 	var href=$(this).attr('href');
-	$("html, body").animate({'scrollTop':($(href).offset().top)}, 500)
+	$("html, body").animate({'scrollTop':($(href).offset().top)}, 1000)
 	//console.log($(href).offset());
 })
 
 
 
-var slides=4;
+/*var slides=4;
 
 if($(window).width()>1000){
 $('.carousel').bxSlider({
@@ -84,4 +84,4 @@ $('form').submit(
 )
 $('form').on('focus','.error',function(){
 	$(this).removeClass('error').siblings('span').remove()
-})
+})*/
