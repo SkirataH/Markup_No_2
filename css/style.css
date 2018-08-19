@@ -99,7 +99,7 @@ body{
 	margin: 0 auto;
 }
 .inner-wrapper{
-	max-width: 1140px;
+	max-width: 1130px;
 	margin:0 auto;
 }
 .flex-container{
@@ -126,7 +126,6 @@ ul, li{
 	color: #f3eebd;
 } 
 p{
-	color:#32312e;
 	margin: 0;
 	padding: 0;
 }
@@ -415,4 +414,92 @@ a{
 }
 .adv_items li:nth-of-type(3), .adv_items li:nth-of-type(4){
 	margin-bottom: 90px;
+}
+/*--END OF ADVANTAGES--*/
+/*--OFFICES SECTION--*/
+.office {
+	background: url(../images/Office_1_back.jpg);
+	color: #fff;
+}
+.office:nth-of-type(2){
+	background: url(../images/Office_2_Back.jpg);
+}
+.office:nth-of-type(3){
+	background: url(../images/Office_3_Back.jpg);
+}
+.office p{
+	font-family: Raleway-Medium;
+	font-size: 23px;
+}
+.office a{
+	float:right;
+	font-family: Raleway-SemiBold;
+	font-size: 18px;
+	color: #fff;
+	position: relative;
+}
+.office a:before, .office a:after{
+	content: '';
+	display: block;
+	position: absolute;
+}
+.office a:before{
+	height: 7px;
+	width: 7px;
+	transform: rotate(225deg);
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+	right:-15px;
+	top:6px;
+}
+.office a:after{
+	width: 15px;
+	border-top: 1px solid #fff;
+	top:9px;
+	right:-15px;
+}
+.switch-right{
+	float:right;
+	max-width: 455px;
+	margin-right:25px;
+}
+.switch-left{
+	float:left;
+	max-width: 455px;
+	margin-left: 25px;
+}
+.office_info{
+	max-width: 365px;
+	border: 3px solid #f8f5d6;
+	color: #fff;
+	font-size: 38px;
+	font-family: Raleway-Black;
+	margin: 20px auto;
+}
+.office_info:after, .office_info:before{
+	min-width: 55px;
+	border-top: 1px solid #f8f5d6;
+}
+.office_info:after{
+	right: -40px; 
+}
+.office_info:before{
+	left: -40px;
+}
+.office button{
+	display: block;
+	height: 70px;
+	width: 265px;
+	background-color:#d8c8c9;
+	font-size: 38px;
+	text-align: center;
+	font-family: Raleway-Black;
+	border-style: none;
+	cursor: pointer;
+	margin: 50px auto 40px auto;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.6);
+	transition: 0.5s;
+}
+.office button:hover{
+	box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
 }
