@@ -183,6 +183,9 @@ a{
 	padding-left: 0;
 	transition: 1s;
 }
+.drop-menu-items a{
+	display: block;
+}
 .dropdown a{
 	color: #d0caa1;
 }
@@ -197,9 +200,6 @@ a{
 	background: rgba(0, 0,0,0.8);
 	border-top: 1px solid #f6f1bf;
 	border-bottom: 1px solid #f6f1bf;
-}
-.dropdown a:last-child>li{
-	padding-bottom: 20px;
 }
 .dropdown:hover .drop-menu-items{
 	display: block;
@@ -246,6 +246,7 @@ a{
 	font-size: 22px;
 	text-transform: uppercase;
 	color: #2e1810;
+	margin-top: 0;
 }
 .sidebar input{
 	margin: 5px 0 5px 0;
@@ -501,5 +502,74 @@ a{
 	transition: 0.5s;
 }
 .office button:hover{
+	box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
+}
+/*--END OF OFFICES--*/
+/*--DISCOUNT SECTION--*/
+.discount{
+	background:url(../images/Offer_BG.png) no-repeat;
+	min-height: 850px;
+	margin: 35px 0;
+	position: relative;
+}
+.orange_frame{
+	position: relative;
+	max-width: 825px;
+	margin: 0 auto;
+}
+.discount_form{
+	max-width: 460px;
+	border-radius: 15px;
+	position: absolute;
+	top: 185px;
+    right:-115px;
+}
+.discount_form h4{
+	font-family: Raleway-Bold;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 40px;
+	margin: 0px;
+}
+.discount_form span{
+	font-family: Raleway-Medium;
+	font-size: 30px;
+	color: #fff;
+	text-transform: lowercase;
+}
+span.extra{
+	font-family: Raleway-ExtraBold;
+	font-size: 48px;
+	text-transform: uppercase;
+}
+.discount_form form{
+	z-index: 999999;
+}
+.discount_form input, .discount_form button{
+	display: block;
+}
+.discount_form input{
+	min-width: 380px;
+	min-height: 45px;
+	padding-left: 11px;
+	margin: 15px 35px;
+}
+.discount_form button{
+	min-width: 295px;
+	min-height: 60px;
+	background-color: #00a9da;
+	font-family: Raleway-ExtraBold;
+	font-size: 36px;
+	text-align: center;
+	color: #fff;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.6);
+	transition: 0.5s;
+	border-style: none;
+	cursor: pointer;
+	margin: 15px auto 40px auto;
+}
+.discount_form button:hover{
 	box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
 }
