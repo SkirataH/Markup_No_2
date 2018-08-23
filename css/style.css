@@ -569,6 +569,7 @@ span.extra{
 	border-style: none;
 	cursor: pointer;
 	margin: 15px auto 40px auto;
+	text-transform: uppercase;
 }
 .discount_form button:hover{
 	box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
