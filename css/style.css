@@ -135,6 +135,9 @@ a{
 /*--HEADER SETTINGS--*/
 .header{
 	background-color: #0c0105;
+	position: fixed;
+	width:100%;
+	z-index: 999;
 }
 .header p{
 	font-family: Raleway-Light;
@@ -222,6 +225,9 @@ a{
 }
 /*--HEADER END--*/
 /*--INTRO SECTION--*/
+.main-content{
+	padding-top:92px;
+}
 .intro{
 	background: url(../images/BannerBack.jpg) 100% no-repeat;
 	min-height: 680px;
@@ -237,23 +243,27 @@ a{
 .sidebar h3{
 	margin-top: 0;
 }
-.sidebar form{
+.book_default{
 	background-color: rgba(255, 224, 146, 0.8);
 	padding: 30px 0;
+	max-width: 230px;
 }
-.sidebar h4{
+.book_default h4{
 	font-family: Raleway-ExtraBold;
 	font-size: 22px;
 	text-transform: uppercase;
 	color: #2e1810;
 	margin-top: 0;
+	text-align: center;
 }
-.sidebar input{
-	margin: 5px 0 5px 0;
+.book_default input{
+	margin: 5px auto;
 	padding-left:8px; 
 	height: 32px;
+	display: block;
+	max-width: 207px;
 }
-.sidebar button{
+.book_default button{
 	height: 50px;
 	width: 165px;
 	font-size: 32px;
@@ -265,9 +275,10 @@ a{
 	box-shadow: 0px 3px 5px rgba(0,0,0,0.6);
 	transition: 1s;
 	text-transform: uppercase;
-	margin-top: 15px;
+	margin: 15px auto 0;
+	display: block;
 }
-.sidebar button:hover{
+.book_default button:hover{
 	box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
 }
 #toNextSection{
@@ -574,3 +585,113 @@ span.extra{
 .discount_form button:hover{
 	box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
 }
+/*--JQuery POP-UP--*/
+
+.pop-up-hidden-content{
+	display: none;
+	height: 585px;
+	width: 875px;
+}
+.pop-up-hidden-content h5{
+
+}
+.pop-up-bg{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.8);
+}
+.pop-up{
+	position: absolute;
+	background: #fff;
+	max-width: 875px; 
+	max-height: 570px;
+}
+.pop-up>img{
+	height: 100%;
+	width: 100%;
+}
+.pop-close{
+	position: absolute;
+    right: -38px;
+    top: -16px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid  #c6c3a3;
+	border-radius: 17px;
+	background-color: #cecfcf;
+}
+
+.pop-close:after, .pop-close:before{
+	width: 20px;
+	height: 2px;
+	background: #f3eebd;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	transform:rotate(45deg);	
+}
+.pop-close:before{
+	transform:rotate(-45deg);	
+}
+/*--JS POP-UP END--*/
+/*--STATS SECTION--*/
+.figure_stats{
+	border-top: 3px solid #5a181c;
+	border-bottom: 3px solid #5a181c;
+	padding:40px 0;
+}
+.actual_stats{
+	justify-content: space-around;
+}
+.stats{
+	background-image: url(../images/Stats_1_BG.png);
+	min-height: 267px;
+	min-width:282px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff
+}
+.stats:nth-of-type(2){
+	background-image: url(../images/Stats_2_BG.png);
+}
+.stats:nth-of-type(3){
+	background-image: url(../images/Stats_3_BG.png);
+}
+.stats:nth-of-type(4){
+	background-image: url(../images/Stats_4_BG.png);
+}
+.text-holder{
+	max-width: 145px;
+	margin: 0 auto;
+}
+.number{
+	font-family:Raleway-ExtraBold ;
+	font-size: 56px;
+	display: block;
+	max-width: 140px;
+	margin:55px auto 0px;
+}
+.extra_span{
+	display: block;
+	text-align: right;
+	font-family: Raleway-Extrabold;
+	font-size: 24px;
+	line-height: 0.5;
+}
+.descr{
+	margin-top: 65px;
+	display: block;
+	font-size: 24px;
+	font-family: Raleway-Bold;
+}
+.first_descr{
+	margin-top: 53px;
+}
+

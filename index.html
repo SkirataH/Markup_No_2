@@ -22,14 +22,14 @@
 			<nav class="dropdown">
 				<a href="#" class="drop-burger"></a>
 				<ul class="drop-menu-items">
-					<li><a href="#" target="_blank">Advantage</a></li>
-					<li><a href="#" target="_blank">Our offices</a></li>
-					<li><a href="#" target="_blank">Discount</a></li>
-					<li><a href="#" target="_blank">Statistics</a></li>
-					<li><a href="#" target="_blank">Reviews</a></li>
-					<li><a href="#" target="_blank">Details</a></li>
-					<li><a href="#" target="_blank">Gift</a></li>
-					<li><a href="#" target="_blank">Contacts</a></li>
+					<li><a href="#s1">Advantage</a></li>
+					<li><a href="#s2">Our offices</a></li>
+					<li><a href="#s3">Discount</a></li>
+					<li><a href="#s4">Statistics</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Details</a></li>
+					<li><a href="#">Gift</a></li>
+					<li><a href="#">Contacts</a></li>
 				</ul>
 			</nav>
 			<p>Kharkiv, 3, Sumskay st. <br> info@open1969.com</p>
@@ -50,11 +50,14 @@
 					<h3>Coworking space</h3>
 					<img src="images/LOGO.png" alt="">
 					<h1>European office in the centre</h1>
-					<form action="book_place_head">
+					<form class="book_default" action="book_place_head">
 						<h4>Book your place right now</h4>
 						<input type="text" placeholder="Your name">
 						<input type="text" placeholder="Your phone number">
-						<button>Book</button>
+						<button class="call-pop" data-pop-link="1">Book</button>
+						<div class="pop-up-hidden-content" data-pop="1">
+							<img src="images/pop-up-message.jpg" alt="Thank you">
+						</div>
 					</form>
 				</div>
 			<a href="#s1" id="toNextSection"><span></span></a>
@@ -74,43 +77,80 @@
 					</ul>
 				</div>
 		</section>
-		<section class="offices">
+		<section class="offices" id="s2">
 			<div class="inner-wrapper">
 				<div class="office clearfix">
 					<div class="switch-right">
 					<h2 class="sec_title office_info">office 50 seats</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In mollitia, ipsam ipsa accusamus vitae ab fugit pariatur nam odio eum nulla facilis doloremque, quos sit reiciendis tempore quasi quam. Debitis!</p>
-					<a href="#">SEE MORE</a>
-					<button>BOOK</button>
+					<a href="#" target="_blank">SEE MORE</a>
+					<button class="call-pop" data-pop-link="2">BOOK</button>
+					<div class="pop-up-hidden-content" data-pop="2">
+						<form class="book_default" action="book_place_head">
+						<h4>Book your place right now</h4>
+						<input type="text" placeholder="Your name">
+						<input type="text" placeholder="Your phone number">
+						<button class="call-pop" data-pop-link="3">Book</button>
+						</form>
+					</div>
 					</div>
 				</div>
 				<div class="office clearfix">
 					<div class="switch-left">
 					<h2 class="sec_title office_info">office 20 seats</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quod, recusandae, et officiis nemo ullam magni deleniti consequatur suscipit, quos sint quidem. Quia exercitationem aliquam eos nulla dolorem hic placeat.</p>
-					<a href="#">SEE MORE</a>
-					<button>BOOK</button>
+					<a href="#" target="_blank">SEE MORE</a>
+					<button class="call-pop" data-pop-link="4">BOOK</button>
+					<div class="pop-up-hidden-content" data-pop="4">
+						<form class="book_default" action="book_place_head">
+						<h4>Book your place right now</h4>
+						<input type="text" placeholder="Your name">
+						<input type="text" placeholder="Your phone number">
+						<button class="call-pop" data-pop-link="5">Book</button>
+						</form>
+					</div>
 					</div>
 				</div>
 				<div class="office clearfix">
 					<div class="switch-right">
 					<h2 class="sec_title office_info">office 6 seats</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quia explicabo deserunt a, quod repellat necessitatibus quisquam perferendis unde quo! Quibusdam officia impedit quam, odio vero suscipit voluptatibus, neque ex!</p>
-					<a href="#">SEE MORE</a>
-					<button>BOOK</button>
+					<a href="#" target="_blank">SEE MORE</a>
+					<button class="call-pop" data-pop-link="6">BOOK</button>
+					<div class="pop-up-hidden-content" data-pop="6">
+						<form class="book_default" action="book_place_head">
+						<h4>Book your place right now</h4>
+						<input type="text" placeholder="Your name">
+						<input type="text" placeholder="Your phone number">
+						<button class="call-pop" data-pop-link="7">Book</button>
+						</form>
+					</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="discount">
+		<section class="discount" id="s3">
 			<div class="orange_frame">
 				<div class="discount_form clearfix">
 					<h4>hurry up<br> <span>and get</span><br><span class="extra"> 40% discount</span></h4>
 					<form action="#">
 						<input type="text" placeholder="Your name">
 						<input type="text" placeholder="Your phone number">
-						<button>Book</button>
+						<button class="call-pop" data-pop-link="8">Book</button>
+						<div class="pop-up-hidden-content" data-pop="8">
+							<img src="images/pop-up-message.jpg" alt="Thank you">
+						</div>
 					</form>
+				</div>
+			</div>
+		</section>
+		<section class="figure_stats" id="s4">
+			<div class="inner-wrapper">
+				<div class="actual_stats flex-container">
+				<div class="stats"><div class="text-holder clearfix"><span class="number">1,051</span><span class="extra_span">sq. feet</span><span class="descr first_descr">space</span></div></div>
+				<div class="stats"><div class="text-holder"><span class="number">15</span><span class="descr ">offices</span></div></div>
+				<div class="stats"><div class="text-holder"><span class="number">670</span><span class="descr">computers</span></div></div>
+				<div class="stats"><div class="text-holder"><span class="number">5,780</span><span class="descr">customers</span></div></div>
 				</div>
 			</div>
 		</section>

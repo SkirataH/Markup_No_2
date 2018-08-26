@@ -3,9 +3,34 @@ $('.intro a').click(function(e){
 	var href=$(this).attr('href');
 	$("html, body").animate({'scrollTop':($(href).offset().top)}, 1000)
 })
+$('.drop-menu-items a').click(function(e){
+	e.preventDefault();
+	var href=$(this).attr('href');
+	$("html, body").animate({'scrollTop':($(href).offset().top)}, 1000)
+})
 
+$('.call-pop').click(function(e){
+	e.preventDefault();
 
+	var x=$(this).attr('data-pop-link');
 
+	var popContent="<div class='pop-up-bg'></div><div class='pop-up'>";
+	popContent+=$('.pop-up-hidden-content[data-pop="'+x+'"]').html();
+	popContent+="<a href='' class='pop-close'></a></div>";
+
+	$('body').append(popContent);
+
+	$('.pop-up').css({
+		'left':$(window).width()/2-($('.pop-up').width()/2)+'px',
+		'top':$(window).scrollTop()+($(window).height()/2)-($('.pop-up').height()/2)+'px'
+	})
+
+});
+
+$('body').on('click','.pop-close, .pop-up-bg',function(e){
+	e.preventDefault();
+	$('.pop-up-bg, .pop-up').remove();
+})
 /*var slides=4;
 
 if($(window).width()>1000){
