@@ -35,11 +35,11 @@
 }
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?xi3n6e');
-  src:  url('../fonts/icomoon.eot?xi3n6e#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?xi3n6e') format('truetype'),
-    url('../fonts/icomoon.woff?xi3n6e') format('woff'),
-    url('../fonts/icomoon.svg?xi3n6e#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?hbr4gd');
+  src:  url('../fonts/icomoon.eot?hbr4gd#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?hbr4gd') format('truetype'),
+    url('../fonts/icomoon.woff?hbr4gd') format('woff'),
+    url('../fonts/icomoon.svg?hbr4gd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -55,14 +55,26 @@
   line-height: 1;
   font-size: 65px;
   position: absolute;
-  left:-75px;
-  bottom:20px;
+  left: -75px;
+  bottom: 20px;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Book:before {
+  content: "\e906";
+}
+.icon-Cup:before {
+  content: "\e907";
+}
+.icon-Group:before {
+  content: "\e908";
+}
+.icon-Metro:before {
+  content: "\e909";
+}
 .icon-cleaning:before {
   content: "\e900";
 }
@@ -84,6 +96,7 @@
 .icon-meeting, .icon-discount{
 	bottom:10px;
 }
+
 
 /*--END OF FONTS--*/
 body{
@@ -365,26 +378,26 @@ a{
 	padding-left: 2%;
     padding-bottom: 6%;
 }
-.sec_adv h3{
+.first_adv{
 	font-family: Raleway-SemiBold;
 	font-size: 48px;
 	color: #3c0a0d;
 	text-align: right;
 	position: relative;
 }
-.sec_adv h3:after, .sec_adv h3:before{
+.first_adv:after, .first_adv:before{
 	content: '';
 	display: block;
 	min-width: 42px;
 	min-height: 35px;
 }
-.sec_adv h3:after{
+.first_adv:after{
 	background-image: url(../images/quote_r.png);
 	position: absolute;
 	right:-10px;
 	bottom:-45px;
 }
-.sec_adv h3:before{
+.first_adv:before{
 	background-image: url(../images/quote_l.png);
 	position: absolute;
 	left: 45px;
@@ -522,6 +535,11 @@ a{
 	min-height: 850px;
 	margin: 35px 0;
 	position: relative;
+}
+.discount img{
+	position: absolute;
+	bottom:8px;
+	left:104px;
 }
 .orange_frame{
 	position: relative;
@@ -694,4 +712,48 @@ span.extra{
 .first_descr{
 	margin-top: 53px;
 }
+/*--END OF STATS--*/
+/*--ADDITIONAL ADVANTAGES--*/
+.add_advantages{
+	background: url(../images/Advantages.png) 100% no-repeat;
+	min-height: 870px;
+}
+.add_advantages>.sec_adv{
+	align-items: flex-start;
 
+}
+.add_advantages blockquote{
+	text-align: left;
+	min-width: 60%;
+	padding-top: 15%;
+	padding-left: 10%;
+}
+.add_advantages h3{
+	float:left;
+}
+.more_adv{
+	flex-wrap: wrap;
+	min-width:30%;
+	padding-top: 50px;
+}
+.for_add_adv{
+	font-size: 48px;
+	font-family: Raleway-Bold;
+	color: #6d2504;
+}
+.for_add_adv:after{
+	background-image: url(../images/add_Adv_r.png);
+	position: absolute;
+	right:-10px;
+	bottom:-20px;
+    min-height: 19px;
+	min-width: 28px;
+}
+.for_add_adv:before{
+	background-image: url(../images/add_Adv_l.png);
+	position: absolute;
+	left: -20px;
+    top: -25px;
+    min-height: 19px;
+	min-width: 28px;
+}
