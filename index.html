@@ -22,14 +22,14 @@
 			<nav class="dropdown">
 				<a href="#" class="drop-burger"></a>
 				<ul class="drop-menu-items">
-					<li><a href="#" target="_blank">Advantage</a></li>
-					<li><a href="#" target="_blank">Our offices</a></li>
-					<li><a href="#" target="_blank">Discount</a></li>
-					<li><a href="#" target="_blank">Statistics</a></li>
-					<li><a href="#" target="_blank">Reviews</a></li>
-					<li><a href="#" target="_blank">Details</a></li>
-					<li><a href="#" target="_blank">Gift</a></li>
-					<li><a href="#" target="_blank">Contacts</a></li>
+					<li><a href="#s1">Advantage</a></li>
+					<li><a href="#s2">Our offices</a></li>
+					<li><a href="#s3">Discount</a></li>
+					<li><a href="#s4">Statistics</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#s6">Details</a></li>
+					<li><a href="#">Gift</a></li>
+					<li><a href="#">Contacts</a></li>
 				</ul>
 			</nav>
 			<p>Kharkiv, 3, Sumskay st. <br> info@open1969.com</p>
@@ -50,33 +50,128 @@
 					<h3>Coworking space</h3>
 					<img src="images/LOGO.png" alt="">
 					<h1>European office in the centre</h1>
-					<form action="">
+					<form class="book_default" action="book_place_head">
 						<h4>Book your place right now</h4>
 						<input type="text" placeholder="Your name">
 						<input type="text" placeholder="Your phone number">
-						<button>Book</button>
+						<button class="call-pop" data-pop-link="1">Book</button>
+						<div class="pop-up-hidden-content" data-pop="1">
+							<img src="images/pop-up-message.jpg" alt="Thank you">
+						</div>
 					</form>
 				</div>
-			<a href="#" id="toNextSection"><span></span></a>
+			<a href="#s1" id="toNextSection"><span></span></a>
 			</div>
 		</section>
-		<section class="advantages">
-			<!--<div class="inner-wrapper">-->
+		<section class="advantages" id="s1">
 				<h2 class="sec_title">Why <span>We</span></h2>
 				<div class="flex-container sec_adv">
-					<blockquote><h3>Great companies <br> start in good company</h3></blockquote>
+					<blockquote><h3 class="first_adv">Great companies <br> start in good company</h3></blockquote>
 					<ul class="adv_items flex-container">
-						<li>Modern equipment,<br>Powerful computers</li>
-						<li>Various public<br> events</li>
-						<li>Comfortable meeting<br> rooms, with the whole<br> set of equipment</li>
-						<li>Discounts <br> for regular<br> customers</li>
-						<li>Access to the <br> office 24/7</li>
-						<li>Quality daily <br> wet cleaning</li>
+						<li><i class="icon-computer"></i>Modern equipment,<br>Powerful computers</li>
+						<li><i class="icon-handshake"></i>Various public<br> events</li>
+						<li class="first_borders"><i class="icon-meeting"></i>Comfortable meeting<br> rooms, with the whole<br> set of equipment</li>
+						<li class="first_borders"><i class="icon-discount"></i>Discounts <br> for regular<br> customers</li>
+						<li><i class="icon-time"></i>Access to the <br> office 24/7</li>
+						<li><i class="icon-cleaning"></i>Quality daily <br> wet cleaning</li>
 					</ul>
+				</div>
+		</section>
+		<section class="offices" id="s2">
+			<div class="inner-wrapper">
+				<div class="office clearfix">
+					<div class="switch-right">
+					<h2 class="sec_title office_info">office 50 seats</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In mollitia, ipsam ipsa accusamus vitae ab fugit pariatur nam odio eum nulla facilis doloremque, quos sit reiciendis tempore quasi quam. Debitis!</p>
+					<a href="#" target="_blank">SEE MORE</a>
+					<button class="call-pop" data-pop-link="2">BOOK</button>
+					<div class="pop-up-hidden-content" data-pop="2">
+						<form class="book_default" action="book_place_head">
+						<h4>Book your place right now</h4>
+						<input type="text" placeholder="Your name">
+						<input type="text" placeholder="Your phone number">
+						<button class="call-pop" data-pop-link="3">Book</button>
+						</form>
+					</div>
+					</div>
+				</div>
+				<div class="office clearfix">
+					<div class="switch-left">
+					<h2 class="sec_title office_info">office 20 seats</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quod, recusandae, et officiis nemo ullam magni deleniti consequatur suscipit, quos sint quidem. Quia exercitationem aliquam eos nulla dolorem hic placeat.</p>
+					<a href="#" target="_blank">SEE MORE</a>
+					<button class="call-pop" data-pop-link="4">BOOK</button>
+					<div class="pop-up-hidden-content" data-pop="4">
+						<form class="book_default" action="book_place_head">
+						<h4>Book your place right now</h4>
+						<input type="text" placeholder="Your name">
+						<input type="text" placeholder="Your phone number">
+						<button class="call-pop" data-pop-link="5">Book</button>
+						</form>
+					</div>
+					</div>
+				</div>
+				<div class="office clearfix">
+					<div class="switch-right">
+					<h2 class="sec_title office_info">office 6 seats</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quia explicabo deserunt a, quod repellat necessitatibus quisquam perferendis unde quo! Quibusdam officia impedit quam, odio vero suscipit voluptatibus, neque ex!</p>
+					<a href="#" target="_blank">SEE MORE</a>
+					<button class="call-pop" data-pop-link="6">BOOK</button>
+					<div class="pop-up-hidden-content" data-pop="6">
+						<form class="book_default" action="book_place_head">
+						<h4>Book your place right now</h4>
+						<input type="text" placeholder="Your name">
+						<input type="text" placeholder="Your phone number">
+						<button class="call-pop" data-pop-link="7">Book</button>
+						</form>
+					</div>
+					</div>
+				</div>
 			</div>
 		</section>
-	</div>
+		<section class="discount" id="s3">
+			<div class="orange_frame">
+				<div class="discount_form clearfix">
+					<h4>hurry up<br><span>and get</span><br><span class="extra"> 40% discount</span></h4>
+					<form action="#">
+						<input type="text" placeholder="Your name">
+						<input type="text" placeholder="Your phone number">
+						<button class="call-pop" data-pop-link="8">Book</button>
+						<div class="pop-up-hidden-content" data-pop="8">
+							<img src="images/pop-up-message.jpg" alt="Thank you">
+						</div>
+					</form>
+				</div>
+			</div>
+			<img src="images/Offer_lady.png" alt="">
+		</section>
+		<section class="figure_stats" id="s4">
+			<div class="inner-wrapper">
+				<div class="actual_stats flex-container">
+				<div class="stats"><div class="text-holder clearfix"><span class="number">1,051</span><span class="extra_span">sq. feet</span><span class="descr first_descr">space</span></div></div>
+				<div class="stats"><div class="text-holder"><span class="number">15</span><span class="descr ">offices</span></div></div>
+				<div class="stats"><div class="text-holder"><span class="number">670</span><span class="descr">computers</span></div></div>
+				<div class="stats"><div class="text-holder"><span class="number">5,780</span><span class="descr">customers</span></div></div>
+				</div>
+			</div>
+		</section>
+		<section class="add_advantages" id="s6">
+			<div class="inner-wrapper flex-container sec_adv">
+				<blockquote class="clearfix">
+					<h3 class="first_adv for_add_adv">It's all in the details</h3>
+				</blockquote>
+				<ul class="adv_items flex-container more_adv">
+					<li> <i class="icon-Metro"></i>Great location, <br> five minutes to metro</li>
+					<li><i class="icon-Cup"></i>Free tea, coffee <br> and sweets</li>
+					<li class="adv_border"><i class="icon-Book"></i>Our own little <br> library</li>
+					<li class="adv_border"><i class="icon-Group "></i>Always good <br> company</li>
+				</ul>
+			</div>
+		</section>
+	</div>	
 	</main>
 	<footer class="footer"></footer>
+	<script src="js/jquery-3.0.0.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
