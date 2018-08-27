@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>1969 O.P.E.N.</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
@@ -15,10 +15,10 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<header class="header">
+<body id="main">
+	<header class="header ">
 		<div class="wrapper">
-			<div class="inner-wrapper flex-container">
+			<div class="inner-wrapper flex-container mobile_for">
 			<nav class="dropdown">
 				<a href="#" class="drop-burger"></a>
 				<ul class="drop-menu-items">
@@ -28,10 +28,11 @@
 					<li><a href="#s4">Statistics</a></li>
 					<li><a href="#">Reviews</a></li>
 					<li><a href="#s6">Details</a></li>
-					<li><a href="#">Gift</a></li>
-					<li><a href="#">Contacts</a></li>
+					<li><a href="#s7">Gift</a></li>
+					<li><a href="#s8">Contacts</a></li>
 				</ul>
 			</nav>
+			<img src="images/LOGO.png" alt="">
 			<p>Kharkiv, 3, Sumskay st. <br> info@open1969.com</p>
 			<p>+38 (068) 089-48-83 <br> +38 (099) 554-93-65</p>
 			<span class="social-top">
@@ -130,7 +131,6 @@
 			</div>
 		</section>
 		<section class="discount" id="s3">
-			<div class="orange_frame">
 				<div class="discount_form clearfix">
 					<h4>hurry up<br><span>and get</span><br><span class="extra"> 40% discount</span></h4>
 					<form action="#">
@@ -141,7 +141,6 @@
 							<img src="images/pop-up-message.jpg" alt="Thank you">
 						</div>
 					</form>
-				</div>
 			</div>
 			<img src="images/Offer_lady.png" alt="">
 		</section>
@@ -168,9 +167,49 @@
 				</ul>
 			</div>
 		</section>
+		<section class="gift" id="s7">
+			<div class="inner-wrapper">
+				<form action="!" class="free_month">
+					<h4>get a month free</h4>
+					<span>Take part in the action simply<a href="#">subscribe</a>to us</span>
+					<input type="text" placeholder="Your name">
+					<input type="text" placeholder="Your phone number">
+					<button class="call-pop" data-pop-link="9">Take part</button>
+					<div class="pop-up-hidden-content" data-pop="9">
+							<img src="images/pop-up-message.jpg" alt="Thank you">
+					</div>
+				</form>
+				<div class="join_team">
+					<span>join the team</span>
+					<h4>work with us</h4>
+				</div>
+			</div>
+		</section>
+		<section class="location">
+			<h3>location</h3>
+			<p>Central Kharkiv is the perfect location because of its close proximity to the commercial, retail and entertainment hubs</p>
+		</section>
 	</div>	
 	</main>
-	<footer class="footer"></footer>
+	<footer class="footer" id="s8">
+		<div class="wrapper">
+				<ul class="flex-container footer-container">
+					<li class="footer_key">coworking space</li>
+					<li class="footer_key">follow us</li>
+					<li class="footer_key">contact</li>
+					<li class="footer_val">Kharkiv, 3, Sumskay st. <br> info@open1969.com</li>
+					<li class="footer_val social_bot">
+						<a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="footer_val">
+						+38 (068) 089-48-83 <br> +38 (099) 554-93-65
+					</li>
+				</ul>
+			<a href=""><img src="images/LOGO.png" alt=""></a>
+		</div>
+	</footer>
 	<script src="js/jquery-3.0.0.js"></script>
 	<script src="js/script.js"></script>
 </body>

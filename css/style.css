@@ -102,6 +102,9 @@
 body{
 	background-color: #f9f6d6;
 }
+input{
+	outline-color: transparent;
+}
 .clearfix:after{
 	content: '';
 	display: block;
@@ -158,6 +161,10 @@ a{
 	color: #f3eebd;
 	margin: 20px 0 24px 0;
 }
+.header img{
+	display: none;
+	
+}
 .dropdown, .social-top{
 	display: flex;
 	justify-content: center;
@@ -194,7 +201,7 @@ a{
 	background-color: rgba(0, 0, 0, 0.6);
 	list-style: none;
 	z-index: 1;
-	top:70%;
+	top:74%;
 	left:-65px;
 	padding-left: 0;
 	transition: 1s;
@@ -275,6 +282,9 @@ a{
 	height: 32px;
 	display: block;
 	max-width: 207px;
+	font-family: Raleway-ExtraLight;
+	font-size: 16px;
+	color: #000;
 }
 .book_default button{
 	height: 50px;
@@ -552,7 +562,7 @@ a{
 	border-radius: 15px;
 	position: absolute;
 	top: 185px;
-    right:-115px;
+    right:105px;
 }
 .discount_form h4{
 	font-family: Raleway-Bold;
@@ -585,6 +595,8 @@ span.extra{
 	min-height: 45px;
 	padding-left: 11px;
 	margin: 15px 35px;
+	font-family: Raleway-Medium;
+	font-size: 24px;
 }
 .discount_form button{
 	min-width: 295px;
@@ -714,10 +726,13 @@ span.extra{
 	margin-top: 53px;
 }
 /*--END OF STATS--*/
+/*--REVIEWS SECTION--*/
+
+
 /*--ADDITIONAL ADVANTAGES--*/
 .add_advantages{
 	background: url(../images/Advantages.png) 100% no-repeat;
-	min-height: 870px;
+	min-height: 920px;
 }
 .add_advantages>.sec_adv{
 	align-items: flex-start;
@@ -767,4 +782,391 @@ span.extra{
 }
 .icon-Book{
 	bottom:30px;
+}
+/*--END OF ADDITIONAL ADVANTAGES--*/
+/*--GIFT SECTION--*/
+.gift{
+	background: url(../images/Subcsr_BG.png);
+	margin-top: 95px;
+	min-height: 900px;
+	position: relative;
+}
+.free_month{
+	min-height: 520px;
+	max-width: 425px;
+	background: rgba(164, 198, 209, 0.9);
+	text-align: center;
+	margin-left: 60px;
+	border-radius: 6px;
+}
+.free_month h4{
+	font-family: Raleway-Bold;
+	font-size: 48px;
+	color: #fff;
+	text-transform: uppercase;
+	margin:0;
+	padding-top: 45px;
+}
+.free_month span{
+	color:#fff;
+	font-family: Raleway-Medium;
+	font-size: 30px;
+	max-width: 320px;
+	margin: 0 auto;
+	display: block;
+	padding-top: 25px;
+}
+.free_month a{
+	display: inline-block;
+	color: #fff;
+	text-decoration: underline;
+	padding: 0 10px;
+}
+.free_month input{
+	display: block;
+	min-width: 325px;
+	min-height: 50px;
+	outline-style: none;
+	outline-color: transparent;
+	margin:10px auto;
+	font-size: 24px;
+	font-family: Raleway-Medium;
+	padding-left: 10px;
+}
+
+.free_month button{
+	display: block;
+	min-height: 78px;
+	min-width: 230px;
+	font-family: Raleway-Bold;
+	font-size: 36px;
+	margin:30px auto 0 auto;
+	text-transform: uppercase;
+	color:#fff;
+	background: #c11b35;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.6);
+	transition:0.5s;
+	border-style: none;
+	cursor:pointer;
+
+}
+.free_month button:hover{
+	box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
+}
+.join_team{
+	max-width:1010px;
+	background: rgba(164, 198, 209, 0.9);
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	min-height: 152px;
+	max-height: 160px;
+	border-radius: 6px;
+	margin-top: 225px;
+	margin-left: 60px;
+}
+.join_team span{
+	font-family: Raleway-Bold;
+	font-size: 36px;
+	padding-top: 41px;
+	display: block;
+}
+.join_team h4{
+	font-family: Raleway-ExtraBold;
+	font-size: 48px;
+	margin:0;
+	padding-bottom: 20px;
+}
+.location{
+	background: url(../images/Location_BG.png);
+	min-height: 900px;
+}
+.location h3{
+	text-align: center;
+	font-family:Raleway-Bold;
+	font-size: 36px;
+	color:#3c3b35;
+	text-transform: uppercase;
+	padding-top:60px; 
+}
+.location p{
+	max-width: 415px;
+	margin:0 auto;
+	font-family: Raleway-Medium;
+	font-size: 18px;
+	color: #3c3b35;
+	text-align: center;
+	
+}
+.footer{
+	background: #612327;
+	text-align: center;
+	
+}
+.footer-container{
+	flex-wrap: wrap;
+	list-style: none;
+}
+.footer-container{
+	list-style: none;
+}
+.footer-container li{
+	min-width: 33%;
+	max-width: 33%;
+}
+.footer_key{
+	font-family: Raleway-ExtraBold;
+	font-size: 24px;
+	text-transform: uppercase;
+	padding:33px 0;
+}
+.footer_val>a{
+	color: #d0caa1;
+	text-decoration: none;
+	margin-right: 39px;
+	transition: 1s;
+}
+.footer_val>a:last-child{
+	margin-right: 0;
+}
+.footer_val>a:hover{
+	color:#f6f1bf;
+}
+.footer_val{
+	font-size: 20px;
+	font-family: Raleway-SemiBold;
+}
+.social_bot{
+	font-size: 30px
+}
+.footer img{
+	padding-bottom: 20px;
+}
+@media only screen and (max-width: 1239px){
+	.wrapper{
+		max-width: 1000px;
+	}
+	.inner-wrapper{
+		max-width: 990px;
+	}
+	.sec_adv blockquote{
+		max-width: 38%;
+	}
+	.first_adv{
+		text-align: left;
+	}
+	.first_adv:before{
+		left:-40px;
+	}
+	.first_adv:after{
+		right: 85px;
+	}
+	.adv_items{
+		max-width: 47%;
+	}
+	.discount{
+		background-image: url(../images/Offer_BG_min.png);
+		background-size: 100%;
+	}
+	.discount_form{
+		position: relative;
+		display: block;
+		margin:0 auto;
+		background-color: rgba(211, 150, 81, 0.8);
+		min-height: 430px;
+		max-width: 450px;
+    	top: 95px;
+    	right: -10px;
+	}
+	.discount img{
+		display: none;
+	}
+	.figure_stats{
+		padding:20px 0;
+	}
+	.actual_stats{
+		flex-wrap: wrap;
+	}
+	.stats{
+		margin-top: 20px;
+		margin-right: 50px;
+	}
+	.add_advantages{
+		-webkit-background-size: 100%;
+		background-size: 100%;
+	}
+	.add_advantages blockquote{
+		padding-left: 20px;
+	}
+	.more_adv{
+		padding-top: 135px;
+	}
+	.gift{
+		background-size: 100%;
+		min-height: 720px;
+	}
+	.join_team{
+		margin-top: 31px;
+	}
+	.location{
+		background-size: 100%;
+		min-height: 690px;
+	}
+	.location h3{
+		padding-top: 30px;
+	}
+}
+@media only screen and (max-width: 970px){
+	.wrapper{
+		max-width: 320px;
+	}
+	.inner-wrapper{
+		max-width: 310px;
+	}
+	.header{
+		position: relative;
+	}
+	.mobile_for{
+		justify-content: space-around;
+	}
+	.dropdown{
+		display: none;
+	}
+	.header p{
+		display: none;
+	}
+	.header img{
+		display: block;
+	}
+	.social-top>a{
+		margin-right: 10px;
+	}
+	.main-content{
+		padding-top: 0;
+	}
+	.intro{
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.sidebar{
+		float:none;
+		margin:0 auto;
+		padding-top: 20px;
+	}
+	#toNextSection:after, #toNextSection:before{
+		max-width: 100px;
+	}
+	#toNextSection:before{
+		top: 54px;
+    	right: 4px;
+	}
+	#toNextSection:after{
+    	top: -30px;
+    	left: -1px;
+	}
+	.sec_title:before,.sec_title:after{
+		display: none;
+	}
+	.sec_adv{
+		flex-wrap: wrap;
+	}
+	.adv_items{
+		margin-left: 90px;
+	}
+	.switch-right,.switch-left{
+		float: none;
+		margin: 0 auto;
+	}
+	.switch-right a:after, .switch-right a:before, .switch-left a:after, .switch-left a:before{
+		display: none;
+	}
+	.switch-right a, .switch-left a{
+		float: none;
+		margin-top: 20px;
+		display: block;
+	}
+	.switch-left{
+		min-height: 540px;
+	}
+	.office, .office:nth-of-type(2),.office:nth-of-type(3){
+		background: #5c1d1f;
+		min-height: 520px;
+		background-size: cover;
+		border-radius: 40px;
+	}
+	.office:nth-of-type(3) h2{
+		max-width: 289px;
+	}
+	.office button{
+		margin-top: 20px;
+	}
+	.office_info{
+		border: 3px solid #5c1d1f;
+		border-radius: 35px;
+	}
+	.discount{
+		background-size: cover;
+		background-position: center;
+		min-height: 550px;
+	}
+	.discount_form{
+		min-height: 470px;
+		top:20px;
+		right: 0;
+	}
+	.discount input{
+		min-width: 230px;
+	}
+	.stats{
+		margin-right: 0;
+	}
+	.add_advantages{
+		background: transparent;
+		border-top: 5px solid #ce893c;
+		border-bottom: 5px solid #ce893c;  
+		margin-top: 20px;
+	}
+	.more_adv{
+		margin-left: 140px;
+	}
+	.first_adv:after{
+		right: -10px;
+	}
+	.gift{
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+	}
+	.free_month{
+		min-height: 560px;
+	}
+	.free_month, .join_team{
+		margin: 0 auto;
+	}
+	.join_team{
+		margin-top: 20px;
+	}
+	.join_team h4{
+		font-size: 32px;
+	}
+	.free_month input{
+		min-width: 230px;
+		max-width: 	230px;
+		font-size: 12px;
+	}
+	.location{
+		display: none;
+	}
+	.footer-container{
+		padding-left: 0;
+	}
+	.footer_key{
+		font-size: 12px;
+	}
+	.footer_val>a{
+		margin-right: 10px;
+	}
+	.footer_val{
+		font-size: 10px;
+	}
 }
